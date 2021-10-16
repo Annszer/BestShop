@@ -575,4 +575,80 @@
     background: var(--color-green);
     transform: translate(0, -50%);
 }
+
 /*endregion sekcja pricing*/
+
+/*region sekcja kontakt*/
+.contact .container {
+    width: 896px;
+    height: 376px;
+    background: var(--color-white);
+    /*border: 5px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50Px;
+}
+
+.contact-text {
+    width: 450px;
+    /*border: 5px solid black;*/
+}
+
+.contact-title {
+    text-align: left;
+    font-family: var(--font-relaway);
+    font-size: 49px;
+    color: var(--color-black);
+    letter-spacing: 0;
+
+}
+
+.contact-text {
+    text-align: left;
+    font-family: var(--font-open);
+    font-size: 16px;
+    color: var(--color-black);
+    letter-spacing: 0;
+}
+
+.contact-contact {
+    /*border: 5px solid violet;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.contact-email {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.contact-email,
+.contact-tel {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-open);
+    letter-spacing: 0;
+    color: var(--color-grey);
+}
+
+.contact-email::before {
+    content: url(../assets/Mail_Icon.svg);
+    padding: 5px;
+}
+
+.contact-tel::before {
+    content: url(../assets/Phone_Icon.svg);
+    padding: 5px;
+}
+
+.form {
+    flex-wrap: wrap;
+    width: 450px;
+    /*border: 5px solid green;*/
+}
+/*endregion sekcja kontakt*/

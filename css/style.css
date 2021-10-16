@@ -651,4 +651,59 @@
     width: 450px;
     /*border: 5px solid green;*/
 }
+
 /*endregion sekcja kontakt*/
+
+/*region sekcja stopka*/
+.footer {
+    width: 100%;
+    height: 89px;
+    background: var(--color-light-grey);
+    box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer .container {
+    padding-top: 20px;
+}
+
+.footer-box {
+}
+
+.footer-logo {
+    text-align: left;
+    font-family: var(--font-relaway);
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: var(--color-primary);
+    opacity: 1;
+}
+
+.footer-copyrights {
+    text-align: left;
+    font-family var(--font-open);
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: var(--color-grey);
+    opacity: 1;
+}
+
+.footer-menu {
+    /*border: 5px solid yellow;*/
+}
+
+.footer-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu-list li {
+    padding: 10px;
+}
+/*endregion sekcja stopka*/

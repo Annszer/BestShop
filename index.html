@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>BestShop</title>
 </head>
@@ -21,10 +21,10 @@
         <div class="header-logo">BestShop</div>
         <nav class="menu">
             <ul class="menu-list">
-                <li><a href="">why us</a></li>
-                <li><a href="">benefits</a></li>
-                <li><a href="">prices</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#why-us">why us</a></li>
+                <li><a href="#benefits">benefits</a></li>
+                <li><a href="#prices">prices</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </div>
@@ -43,7 +43,7 @@
 <!--endregion sekcja otwierająca-->
 
 <!--sekcja statystyki-->
-<section class="section">
+<section class="section" id="why-us">
     <div class="container">
         <h2 class="section-title">The most popular sales platform in country</h2>
         <div class="section-window">
@@ -78,7 +78,7 @@
 <!--sekcja statystyki-->
 
 <!--sekcja benefity-->
-<section class="benefit">
+<section class="benefit" id="benefits">
     <div class="container">
         <div class="benefit-window">
 
@@ -126,7 +126,7 @@
 <!--sekcja benefity-->
 
 <!--sekcja pricing-->
-<section class="pricing">
+<section class="pricing" id="prices">
     <div class="container">
         <p class="pricing-title">Pricing</p>
         <div class="pricing-window">
@@ -175,7 +175,7 @@
 <!--sekcja pricing-->
 
 <!--sekcja kontakt-->
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container">
         <div class="contact-text">
             <p class="contact-title">Any questions?</p>
@@ -188,13 +188,13 @@
         <form class="form">
             <div class="form-row">
                 <label for="name">Name</label>
-                <input id="name" type="text" placeholder="name">
+                <input id="name" type="text" >
             </div>
             <div class="form-row">
                 <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="email">
+                <input id="email" type="email" >
             </div>
-            <div class="form-row">
+            <div class="form-row form-row-checkbox">
                 <label class="checkbox">
                     <Input type="checkbox" class="checkbox-input">
                     <span class="checkbox-text">
@@ -221,10 +221,10 @@
             </div>
             <nav class="footer-menu">
                 <ul class="footer-menu-list">
-                    <li><a href="https://twitter.com/">
+                    <li><a href="https://twitter.com/" target="_blank">
                         <img src="assets/Twitter.svg" alt="" class="footer-tw">
                     </a></li>
-                    <li><a href="https://www.facebook.com/">
+                    <li><a href="https://www.facebook.com/" target="_blank">
                         <img src="assets/Facebook.svg" alt="" class="footer-fb">
                     </a></li>
                 </ul>

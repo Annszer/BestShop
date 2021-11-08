@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   box-sizing: border-box;
   --color-primary: #08A6E4;
@@ -8,8 +9,8 @@
   --color-grey: #A5A5A5;
   --color-light-grey: #F7F7F7;
   --color-white: #FFFFFF;
-  --font-relaway: 'Raleway', sans-serif;
-  --font-open: 'Open Sans', sans-serif;
+  --font-relaway: "Raleway", sans-serif;
+  --font-open: "Open Sans", sans-serif;
 }
 
 /*region belka górna nawigacji*/
@@ -75,7 +76,7 @@
 
 .menu-list a:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -27px;
   left: 0;
   width: 100%;
@@ -85,7 +86,6 @@
 }
 
 /*endregion belka górna nawigacji*/
-
 /*region sekcja otwierająca*/
 .main {
   width: 100%;
@@ -147,7 +147,6 @@
 }
 
 /*endregion sekcja otwierająca*/
-
 /*region sekcja statystyki*/
 .section {
   width: 100%;
@@ -273,7 +272,6 @@
 }
 
 /*endregion sekcja statystyki*/
-
 /*region sekcja benefity*/
 .benefit {
   width: 100%;
@@ -321,7 +319,7 @@
 
 .benefit-box1:after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -25px;
   left: 0;
   width: 328px;
@@ -379,9 +377,6 @@
   flex-direction: row-reverse;
 }
 
-.benefit-img-reverse {
-}
-
 .benefit-shape-reverse {
   background: var(--color-primary);
   width: 300px;
@@ -431,7 +426,6 @@
 }
 
 /*endregion sekcja benefity*/
-
 /*region sekcja pricing*/
 .pricing {
   width: 100%;
@@ -579,7 +573,6 @@
 }
 
 /*endregion sekcja pricing*/
-
 /*region sekcja kontakt*/
 .contact .container {
   width: 896px;
@@ -609,7 +602,6 @@
   font-size: 49px;
   color: var(--color-black);
   letter-spacing: 0;
-
 }
 
 .contact-contact {
@@ -618,7 +610,6 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-
 }
 
 .contact-email {
@@ -651,7 +642,8 @@
   width: 450px;
   /*border: 5px solid green;*/
 }
-.form-row{
+
+.form-row {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -664,62 +656,66 @@
   color: var(--color-primary);
   opacity: 1;
 }
-.form-row-checkbox{
+
+.form-row-checkbox {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0;
   color: #707070;
 }
-input[type="text"],
-input[type="email"],{
-  //outline: none;
-  //border-bottom: 1px solid var(--color-light-grey);
+
+input[type=text],
+input[type=email] {
   border: none;
   border-bottom: 2px solid var(--color-primary);
   line-height: 22px;
   margin-bottom: 5px;
-
-
 }
+
 input:focus {
   border-color: red;
 }
-.checkbox{
+
+.checkbox {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
 }
-.form-row-last{
+
+.form-row-last {
   align-items: flex-end;
 }
-.form-button{
+
+.form-button {
   outline: none;
   background: var(--color-primary);
   color: var(--color-white);
   padding: 10px 50px;
   border-radius: 35px;
 }
-.form-button:focus{
+
+.form-button:focus {
   /*border: 5px solid var(--color-light-grey);*/
   box-shadow: 5px 10px 14px #07ACE629;
-
 }
-.checkbox-input{
-  appearance: none;
+
+.checkbox-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 24px;
   height: 24px;
   content: url(../assets/Checkmark.svg);
   /*border: 5px solid red;*/
 }
-.checkbox-input:checked{
+
+.checkbox-input:checked {
   content: url(../assets/Checkmark-1.svg);
   /*background: var(--color-white);*/
 }
 
-
 /*endregion sekcja kontakt*/
-
 /*region sekcja stopka*/
 .footer {
   width: 100%;
@@ -730,9 +726,6 @@ input:focus {
 
 .footer .container {
   padding-top: 20px;
-}
-
-.footer-box {
 }
 
 .footer-logo {
@@ -772,4 +765,6 @@ input:focus {
 .footer-menu-list li {
   padding: 10px;
 }
+
 /*endregion sekcja stopka*/
+/*# sourceMappingURL=main.css.map */

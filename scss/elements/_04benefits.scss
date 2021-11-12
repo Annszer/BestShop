@@ -1,0 +1,184 @@
+/*region sekcja benefity*/
+.benefit {
+  width: 100%;
+  height: 1395px;
+  background: var(--color-light-grey);
+  opacity: 1;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.benefit .container {
+  /*border: 2px solid red;*/
+}
+
+.benefit-window {
+  //border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 105px;
+  border-radius: 5px;
+  gap: 40px;
+}
+
+.benefit-box {
+  height: 370px;
+  /*width:1124px;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //border: 5px solid black;
+  background: var(--color-white);
+  width: 100%;
+}
+
+.benefit-box1 {
+  display: flex;
+  flex-direction: column;
+  //border: 5px solid violet;
+  /*box-sizing: padding-box;*/
+  position: relative;
+  margin-left: 20px;
+  width: 50%;
+  height: 50%;
+}
+
+.benefit-box1:after {
+  position: absolute;
+  content: '';
+  bottom: -25px;
+  left: 0;
+  width: 328px;
+  height: 4px;
+  background-color: var(--color-redish);
+  opacity: 1;
+}
+
+.benefit-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //border: 5px solid violet;
+  width: 30%;
+
+}
+
+.benefit-img {
+  width: 386px;
+  height: 219px;
+  background-size: cover;
+  transform: translate(40%, 20%);
+  z-index: 1;
+  position: relative;
+  left:-305px;
+}
+
+.benefit-shape {
+  background: var(--color-redish);
+  width: 180px;
+  height: 180px;
+  //transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  transform: rotate(45deg);
+  border-radius: 41px;
+  opacity: 1;
+  margin-right: 80px;
+  position: absolute;
+}
+
+.benefit-box-title {
+  text-align: left;
+  font-family: var(--font-relaway);
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-black);
+  opacity: 1;
+  margin: 10px;
+}
+
+.benefit-box-text {
+  text-align: left;
+  font-family: var(--font-open);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: var(--color-black);
+  opacity: 1;
+  width: 416px;
+}
+
+.benefit-box-reverse {
+  flex-direction: row-reverse;
+}
+
+.benefit-img-reverse {
+  transform: translate(90%, 10%);
+  height: 309px;
+
+}
+
+.benefit-shape-reverse {
+  background: var(--color-primary);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.benefit-box2-reverse {
+  /*border: 5px solid black;*/
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.benefit-box1-reverse:after {
+  background-color: var(--color-primary);
+}
+
+.benefit-box-separate {
+  justify-content: space-between;
+  gap: 40px;
+  background: none;
+}
+
+.benefit-box1-separate {
+  width: 623px;
+  height: 370px;
+  background: var(--color-white);
+}
+.benefit-box1-separate:after {
+  background-color: var(--color-green);
+  bottom: 100px;
+  margin-left: 20px;
+}
+.benefit-box-title-separate{
+  margin-top: 80px;
+  margin-left: 20px;
+
+}
+.benefit-box-text-separate{
+  margin-left: 20px;
+}
+
+.benefit-box2-separate {
+  width: 440px;
+  height: 370px;
+  background: var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.benefit-img-separate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/*endregion sekcja benefity*/

@@ -1,0 +1,163 @@
+/*region sekcja kontakt*/
+.contact .container {
+  width: 896px;
+  //height: 376px;
+  background: var(--color-white);
+  //border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.contact-info {
+  width: 50%;
+  height: 350px;
+  //border: 5px solid black;
+  text-align: left;
+  font-family: var(--font-open);
+  font-size: 16px;
+  color: var(--color-black);
+  letter-spacing: 0;
+
+}
+
+.contact-title {
+  text-align: left;
+  font-family: var(--font-relaway);
+  font-size: 49px;
+  color: var(--color-black);
+  letter-spacing: 0;
+
+}
+
+.contact-contact {
+  //border: 5px solid violet;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.contact-email {
+  margin-right: 20px;
+  text-align: left;
+}
+
+.contact-email,
+.contact-tel {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-open);
+  letter-spacing: 0;
+  color: var(--color-grey);
+  //border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+}
+
+.contact-email::before {
+  content: url(../assets/Mail_Icon.svg);
+  padding: 5px;
+}
+
+.contact-tel::before {
+  content: url(../assets/Phone_Icon.svg);
+  padding: 5px;
+}
+
+.form {
+  flex-wrap: wrap;
+  width: 50%;
+  height: 350px;
+  //border: 5px solid green;
+}
+.form-row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  font-family: var(--font-open);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3.28px;
+  color: var(--color-primary);
+  opacity: 1;
+}
+.form-row-checkbox{
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #707070;
+}
+input[type="text"],
+input[type="email"],{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-grey);
+  line-height: 22px;
+  margin-bottom: 5px;
+  width: 400px;
+  height: 30px;
+
+
+}
+input[type="text"]:focus,
+input[type="email"]:focus{
+  border-bottom: 3px solid var(--color-primary);
+}
+.checkbox{
+  display: flex;
+  position: relative;
+  //border: 2px solid purple;
+}
+.form-row-last{
+  align-items: flex-end;
+}
+.form-button{
+  border: none;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px 50px;
+  border-radius: 35px;
+  transition: .5s;
+  cursor: pointer;
+  margin: 40px 20px;
+}
+.form-button:hover,
+.form-button:focus{
+  box-shadow: 10px 10px 14px var(--color-primary-shadow);
+}
+.checkbox-input{
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--color-grey);
+  border-radius: 4px;
+  /*border: 5px solid red;*/
+}
+.checkbox-input:checked {
+  appearance: none;
+  background-image: url(../assets/Checkmark.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border: 1px solid var(--color-grey);
+  border-radius: 4px;
+}
+.checkbox-text{
+  line-height: 20px;
+  text-align: justify;
+  margin: 0 40px;
+
+}
+
+/*endregion sekcja kontakt*/

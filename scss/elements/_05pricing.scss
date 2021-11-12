@@ -1,0 +1,165 @@
+/*region sekcja pricing*/
+.pricing {
+  width: 100%;
+  height: 712px;
+  background: var(--color-white);
+  /*box-shadow: 0 3px 6px #00000029;*/
+  opacity: 1;
+  margin: 0;
+}
+
+.pricing .container {
+  /*border: 5px solid red;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: var(--font-relaway);
+  letter-spacing: 0;
+  color: var(--color-black);
+  margin-top: 40px;
+}
+
+.pricing-window {
+  width: 100%;
+  height: 616px;
+  //border: 5px solid violet;
+  /*background: #55DFB4;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.pricing-box {
+  width: 272px;
+  height: 461px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  border-radius: 18px;
+  //background: #e9f7ff;
+  position: relative;
+}
+
+.pricing-box-title {
+  text-align: left;
+  font-family: var(--font-relaway);
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #13253B;
+  padding: 10px;
+}
+
+.pricing-box-price {
+  text-align: left;
+  font-family: var(--font-open);
+  font-weight: 300;
+  font-size: 46px;
+  letter-spacing: 0;
+  color: var(--color-redish);
+  margin: 0 auto;
+}
+
+.pricing-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -50px;
+  padding-top: 20px;
+
+}
+
+
+.pricing-list li {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.pricing-list li::before {
+  content: url(../assets/Ckechmark-1.svg);
+  padding: 5px;
+}
+
+.pricing-box-professional .pricing-list li:nth-child(5)::before{
+  content: url(../assets/Close.svg);
+  padding: 5px;
+}
+.pricing-box-basic .pricing-list li:nth-child(4)::before,
+.pricing-box-basic .pricing-list li:nth-child(5)::before {
+  content: url(../assets/Close.svg);
+  padding: 5px;
+}
+
+.pricing-btn {
+  padding: 10px 50px;
+  color: var(--color-white);
+  border-radius: 35px;
+  box-shadow: none;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: var(--font-open);
+
+  border: none;
+  position: absolute;
+  top: 100%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.pricing-box-basic {
+  border: 1px solid var(--color-redish);
+}
+
+.pricing-box-professional {
+  padding: 20px;
+  border: 1px solid var(--color-primary);
+  box-shadow: 2px 2px 10px var(--color-primary);
+  margin-top: 60px;
+}
+
+.pricing-box-premium {
+  border: 1px solid var(--color-green);
+}
+
+.pricing-box-offer {
+  text-align: left;
+  font-family: var(--font-relaway);
+  letter-spacing: 0;
+  color: var(--color-black);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pricing-btn-basic {
+  background: var(--color-redish);
+
+}
+
+.pricing-btn-professional {
+  background: var(--color-primary);
+}
+.price-professional{
+  color: var(--color-primary);
+}
+
+.pricing-btn-premium {
+  background: var(--color-green);
+}
+.price-premium{
+  color: var(--color-green);
+}
+/*endregion sekcja pricing*/

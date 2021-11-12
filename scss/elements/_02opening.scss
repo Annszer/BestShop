@@ -2,7 +2,7 @@
 .main {
   width: 100%;
   height: 100vh;
-  background: var(--color-white);
+  background: $color-white;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
   display: flex;
@@ -27,35 +27,35 @@
 
 .main-title {
   text-align: center;
-  font-family: var(--font-relaway);
+  font-family: $font-relaway;
   font-weight: 300;
   font-size: 49px;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: $color-black;
   opacity: 1;
   text-transform: capitalize;
 }
 
 .main-text {
   text-align: center;
-  font-family: var(--font-open);
+  font-family: $font-open;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: $color-black;
   opacity: 1;
   padding: 20px;
 }
 
 .main-btn {
-  background: var(--color-primary);
+  background: $color-primary;
   box-shadow: 5px 10px 14px #07ACE629;
   border-radius: 40px;
   opacity: 1;
   padding: 22px 157px 23px 157px;
   text-decoration: none;
-  color: var(--color-white);
-  font-family: var(--font-open);
+  color: $color-white;
+  font-family: $font-open;
 }
 
 /*endregion sekcja otwierająca*/

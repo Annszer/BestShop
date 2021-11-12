@@ -2,7 +2,7 @@
 .contact .container {
   width: 896px;
   //height: 376px;
-  background: var(--color-white);
+  background: $color-white;
   //border: 5px solid red;
   display: flex;
   justify-content: center;
@@ -15,18 +15,18 @@
   height: 350px;
   //border: 5px solid black;
   text-align: left;
-  font-family: var(--font-open);
+  font-family: $font-open;
   font-size: 16px;
-  color: var(--color-black);
+  color: $color-black;
   letter-spacing: 0;
 
 }
 
 .contact-title {
   text-align: left;
-  font-family: var(--font-relaway);
+  font-family: $font-relaway;
   font-size: 49px;
-  color: var(--color-black);
+  color: $color-black;
   letter-spacing: 0;
 
 }
@@ -50,9 +50,9 @@
   text-align: left;
   font-size: 16px;
   font-weight: 600;
-  font-family: var(--font-open);
+  font-family: $font-open;
   letter-spacing: 0;
-  color: var(--color-grey);
+  color: $color-grey;
   //border: 2px solid green;
   display: flex;
   justify-content: center;
@@ -82,11 +82,11 @@
   align-items: flex-start;
   flex-direction: column;
   text-align: left;
-  font-family: var(--font-open);
+  font-family: $font-open;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 3.28px;
-  color: var(--color-primary);
+  color: $color-primary;
   opacity: 1;
 }
 .form-row-checkbox{
@@ -99,7 +99,7 @@ input[type="text"],
 input[type="email"],{
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid $color-grey;
   line-height: 22px;
   margin-bottom: 5px;
   width: 400px;
@@ -109,7 +109,7 @@ input[type="email"],{
 }
 input[type="text"]:focus,
 input[type="email"]:focus{
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid $color-primary;
 }
 .checkbox{
   display: flex;
@@ -121,8 +121,8 @@ input[type="email"]:focus{
 }
 .form-button{
   border: none;
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: $color-primary;
+  color: $color-white;
   padding: 10px 50px;
   border-radius: 35px;
   transition: .5s;
@@ -131,7 +131,7 @@ input[type="email"]:focus{
 }
 .form-button:hover,
 .form-button:focus{
-  box-shadow: 10px 10px 14px var(--color-primary-shadow);
+  box-shadow: 10px 10px 14px $color-primary-shadow;
 }
 .checkbox-input{
   appearance: none;
@@ -140,7 +140,7 @@ input[type="email"]:focus{
   left: 0;
   height: 25px;
   width: 25px;
-  border: 1px solid var(--color-grey);
+  border: 1px solid $color-grey;
   border-radius: 4px;
   /*border: 5px solid red;*/
 }
@@ -150,7 +150,7 @@ input[type="email"]:focus{
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
-  border: 1px solid var(--color-grey);
+  border: 1px solid $color-grey;
   border-radius: 4px;
 }
 .checkbox-text{

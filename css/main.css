@@ -360,16 +360,6 @@ textarea {
 
 :root {
   box-sizing: border-box;
-  --color-primary: #08A6E4;
-  --color-primary-shadow: rgba(7, 172, 230, .16);
-  --color-redish: #FB3B64;
-  --color-green: #55DFB4;
-  --color-black: #000000;
-  --color-grey: #A5A5A5;
-  --color-light-grey: #F7F7F7;
-  --color-white: #FFFFFF;
-  --font-relaway: "Raleway", sans-serif;
-  --font-open: "Open Sans", sans-serif;
 }
 
 html {
@@ -378,6 +368,82 @@ html {
 
 section {
   scroll-margin-top: 70px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 255, 255, 0.3);
+  margin: 8px;
+}
+.container .row [class^=col-] {
+  min-height: 100px;
+  padding: 0 8px;
+  border: 1px solid grey;
+}
+@media (max-width: 768px) {
+  .container .row [class^=col-] {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .row [class^=col-] {
+    flex-basis: 100%;
+  }
+}
+
+.col-1 {
+  flex: 0 0 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
 }
 
 /*region belka górna nawigacji*/
@@ -396,7 +462,7 @@ section {
   z-index: 100;
   width: 100%;
   height: 70px;
-  background: var(--color-white);
+  background: #FFFFFF;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
   display: flex;
@@ -406,9 +472,9 @@ section {
 }
 
 .header-logo a {
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
-  color: var(--color-primary);
+  color: #08A6E4;
   font-size: 37px;
   text-decoration: none;
 }
@@ -429,10 +495,10 @@ section {
   margin-left: 95px;
   padding: 0;
   text-transform: uppercase;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   letter-spacing: 3.28px;
-  color: var(--color-grey);
+  color: #A5A5A5;
   text-align: center;
   opacity: 1;
   transition: 0.5s;
@@ -441,7 +507,7 @@ section {
 
 .menu-list a:hover {
   font-weight: bold;
-  color: var(--color-black);
+  color: #000000;
   opacity: 1;
   position: relative;
 }
@@ -453,7 +519,7 @@ section {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
   opacity: 1;
 }
 
@@ -462,7 +528,7 @@ section {
 .main {
   width: 100%;
   height: 100vh;
-  background: var(--color-white);
+  background: #FFFFFF;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
   display: flex;
@@ -487,35 +553,35 @@ section {
 
 .main-title {
   text-align: center;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 49px;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   opacity: 1;
   text-transform: capitalize;
 }
 
 .main-text {
   text-align: center;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   opacity: 1;
   padding: 20px;
 }
 
 .main-btn {
-  background: var(--color-primary);
+  background: #08A6E4;
   box-shadow: 5px 10px 14px #07ACE629;
   border-radius: 40px;
   opacity: 1;
   padding: 22px 157px 23px 157px;
   text-decoration: none;
-  color: var(--color-white);
-  font-family: var(--font-open);
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*endregion sekcja otwierająca*/
@@ -523,7 +589,7 @@ section {
 .section {
   width: 100%;
   height: 531px;
-  background: var(--color-white);
+  background: #FFFFFF;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
   display: flex;
@@ -544,10 +610,10 @@ section {
   text-align: center;
   letter-spacing: 0;
   opacity: 1;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: 300;
-  color: var(--color-black);
+  color: #000000;
   margin-bottom: 103px;
 }
 
@@ -607,35 +673,35 @@ section {
 }
 
 .section-circle1 {
-  background: var(--color-redish);
+  background: #FB3B64;
 }
 
 .section-circle2 {
-  background: var(--color-primary);
+  background: #08A6E4;
 }
 
 .section-circle3 {
-  background: var(--color-green);
+  background: #55DFB4;
 }
 
 .section-box-text {
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 5.96px;
-  color: var(--color-black);
+  color: #000000;
   opacity: 1;
   margin: 0 auto;
 }
 
 .section-box-description {
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 17px;
   font-weight: 300;
   letter-spacing: 0;
-  color: var(--color-grey);
+  color: #A5A5A5;
   opacity: 1;
   text-transform: lowercase;
 }
@@ -645,7 +711,7 @@ section {
 .benefit {
   width: 100%;
   height: 1395px;
-  background: var(--color-light-grey);
+  background: #F7F7F7;
   opacity: 1;
   box-shadow: 0 3px 6px #00000029;
 }
@@ -670,7 +736,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-white);
+  background: #FFFFFF;
   width: 100%;
 }
 
@@ -691,7 +757,7 @@ section {
   left: 0;
   width: 328px;
   height: 4px;
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
   opacity: 1;
 }
 
@@ -713,7 +779,7 @@ section {
 }
 
 .benefit-shape {
-  background: var(--color-redish);
+  background: #FB3B64;
   width: 180px;
   height: 180px;
   transform: rotate(45deg);
@@ -725,22 +791,22 @@ section {
 
 .benefit-box-title {
   text-align: left;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: 500;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   opacity: 1;
   margin: 10px;
 }
 
 .benefit-box-text {
   text-align: left;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   opacity: 1;
   width: 416px;
 }
@@ -755,7 +821,7 @@ section {
 }
 
 .benefit-shape-reverse {
-  background: var(--color-primary);
+  background: #08A6E4;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -770,7 +836,7 @@ section {
 }
 
 .benefit-box1-reverse:after {
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
 }
 
 .benefit-box-separate {
@@ -782,11 +848,11 @@ section {
 .benefit-box1-separate {
   width: 623px;
   height: 370px;
-  background: var(--color-white);
+  background: #FFFFFF;
 }
 
 .benefit-box1-separate:after {
-  background-color: var(--color-green);
+  background-color: #55DFB4;
   bottom: 100px;
   margin-left: 20px;
 }
@@ -803,7 +869,7 @@ section {
 .benefit-box2-separate {
   width: 440px;
   height: 370px;
-  background: var(--color-green);
+  background: #55DFB4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -822,7 +888,7 @@ section {
 .pricing {
   width: 100%;
   height: 712px;
-  background: var(--color-white);
+  background: #FFFFFF;
   /*box-shadow: 0 3px 6px #00000029;*/
   opacity: 1;
   margin: 0;
@@ -840,9 +906,9 @@ section {
   text-align: center;
   font-size: 36px;
   font-weight: 300;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   margin-top: 40px;
 }
 
@@ -870,7 +936,7 @@ section {
 
 .pricing-box-title {
   text-align: left;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0;
@@ -880,11 +946,11 @@ section {
 
 .pricing-box-price {
   text-align: left;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 46px;
   letter-spacing: 0;
-  color: var(--color-redish);
+  color: #FB3B64;
   margin: 0 auto;
 }
 
@@ -922,13 +988,13 @@ section {
 
 .pricing-btn {
   padding: 10px 50px;
-  color: var(--color-white);
+  color: #FFFFFF;
   border-radius: 35px;
   box-shadow: none;
   background-repeat: no-repeat;
   font-size: 15px;
   font-weight: bold;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   border: none;
   position: absolute;
   top: 100%;
@@ -937,54 +1003,54 @@ section {
 }
 
 .pricing-box-basic {
-  border: 1px solid var(--color-redish);
+  border: 1px solid #FB3B64;
 }
 
 .pricing-box-professional {
   padding: 20px;
-  border: 1px solid var(--color-primary);
-  box-shadow: 2px 2px 10px var(--color-primary);
+  border: 1px solid #08A6E4;
+  box-shadow: 2px 2px 10px #08A6E4;
   margin-top: 60px;
 }
 
 .pricing-box-premium {
-  border: 1px solid var(--color-green);
+  border: 1px solid #55DFB4;
 }
 
 .pricing-box-offer {
   text-align: left;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   font-size: 12px;
   font-weight: bold;
 }
 
 .pricing-btn-basic {
-  background: var(--color-redish);
+  background: #FB3B64;
 }
 
 .pricing-btn-professional {
-  background: var(--color-primary);
+  background: #08A6E4;
 }
 
 .price-professional {
-  color: var(--color-primary);
+  color: #08A6E4;
 }
 
 .pricing-btn-premium {
-  background: var(--color-green);
+  background: #55DFB4;
 }
 
 .price-premium {
-  color: var(--color-green);
+  color: #55DFB4;
 }
 
 /*endregion sekcja pricing*/
 /*region sekcja kontakt*/
 .contact .container {
   width: 896px;
-  background: var(--color-white);
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -995,17 +1061,17 @@ section {
   width: 50%;
   height: 350px;
   text-align: left;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: var(--color-black);
+  color: #000000;
   letter-spacing: 0;
 }
 
 .contact-title {
   text-align: left;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-size: 49px;
-  color: var(--color-black);
+  color: #000000;
   letter-spacing: 0;
 }
 
@@ -1026,9 +1092,9 @@ section {
   text-align: left;
   font-size: 16px;
   font-weight: 600;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0;
-  color: var(--color-grey);
+  color: #A5A5A5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1057,11 +1123,11 @@ section {
   align-items: flex-start;
   flex-direction: column;
   text-align: left;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 3.28px;
-  color: var(--color-primary);
+  color: #08A6E4;
   opacity: 1;
 }
 
@@ -1076,7 +1142,7 @@ input[type=text],
 input[type=email] {
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid #A5A5A5;
   line-height: 22px;
   margin-bottom: 5px;
   width: 400px;
@@ -1085,7 +1151,7 @@ input[type=email] {
 
 input[type=text]:focus,
 input[type=email]:focus {
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid #08A6E4;
 }
 
 .checkbox {
@@ -1099,8 +1165,8 @@ input[type=email]:focus {
 
 .form-button {
   border: none;
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: #08A6E4;
+  color: #FFFFFF;
   padding: 10px 50px;
   border-radius: 35px;
   transition: 0.5s;
@@ -1110,7 +1176,7 @@ input[type=email]:focus {
 
 .form-button:hover,
 .form-button:focus {
-  box-shadow: 10px 10px 14px var(--color-primary-shadow);
+  box-shadow: 10px 10px 14px rgba(7, 172, 230, 0.16);
 }
 
 .checkbox-input {
@@ -1122,7 +1188,7 @@ input[type=email]:focus {
   left: 0;
   height: 25px;
   width: 25px;
-  border: 1px solid var(--color-grey);
+  border: 1px solid #A5A5A5;
   border-radius: 4px;
   /*border: 5px solid red;*/
 }
@@ -1135,7 +1201,7 @@ input[type=email]:focus {
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
-  border: 1px solid var(--color-grey);
+  border: 1px solid #A5A5A5;
   border-radius: 4px;
 }
 
@@ -1150,7 +1216,7 @@ input[type=email]:focus {
 .footer {
   width: 100%;
   height: 89px;
-  background: var(--color-light-grey);
+  background: #F7F7F7;
   box-shadow: 0 -5px 40px #00000029;
 }
 
@@ -1160,21 +1226,21 @@ input[type=email]:focus {
 
 .footer-logo {
   text-align: left;
-  font-family: var(--font-relaway);
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 300;
   letter-spacing: 0;
-  color: var(--color-primary);
+  color: #08A6E4;
   opacity: 1;
 }
 
 .footer-copyrights {
   text-align: left;
-  font-family: var(--font-open);
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 300;
   letter-spacing: 0;
-  color: var(--color-grey);
+  color: #A5A5A5;
   opacity: 1;
   padding: 5px 0;
 }

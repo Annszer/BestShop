@@ -1,9 +1,9 @@
 @import "settings/reset";
 @import "settings/variables";
 @import "settings/root";
-@import "settings/grid";
-@import "settings/media";
+@import "settings/functions";
 @import "settings/mixin";
+@import "settings/grid";
 
 @import "elements/01navigation";
 @import "elements/02opening";

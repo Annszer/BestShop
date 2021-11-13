@@ -1,11 +1,11 @@
 /*region belka górna nawigacji*/
 .container {
-  width: 1053px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  //border: 4px solid red;
+  ////width: 1053px;
+  //margin: 0 auto;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+
 }
 
 .header {
@@ -17,10 +17,27 @@
   background: $color-white;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
+  //border: 2px solid blue;
+  .container{
+    //border: 2px solid green;
+
+
+    .row{
+      //border: 2px solid violet;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include tablet{
+        margin-right: 15px;
+      }
+
+    }
+
+
+
+
+  }
 }
 
 .header-logo a{
@@ -29,22 +46,26 @@
   color: $color-primary;
   font-size: 37px;
   text-decoration: none;
+
+
 }
 
 .menu {
   display: flex;
   flex-direction: row;
+
 }
 
 .menu-list {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin-right: $gutter;
 }
 
 .menu-list a {
   text-decoration: none;
-  margin-left: 95px;
+  margin-left: 75px;
   padding: 0;
   text-transform: uppercase;
   font-family: $font-open;
@@ -55,6 +76,16 @@
   opacity: 1;
   transition: 0.5s;
   white-space: nowrap;
+  //border: 2px solid violet;
+  @include tablet{
+    margin-left: 50px;
+  }
+  @include mobile{
+    display: none;
+  }
+  @include small-mobile{
+    display: none;
+  }
 }
 
 .menu-list a:hover {
@@ -74,5 +105,13 @@
   background-color: $color-primary;
   opacity: 1;
 }
+
+
+
+
+
+
+
+
 
 /*endregion belka górna nawigacji*/

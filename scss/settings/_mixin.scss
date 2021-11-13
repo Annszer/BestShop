@@ -14,3 +14,8 @@
     @content
   }
 }
+@mixin small-mobile {
+  @media #{$small-mobile}{
+    @content
+  }
+}

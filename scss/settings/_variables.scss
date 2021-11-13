@@ -9,9 +9,10 @@ $color-white: #FFFFFF;
 $font-relaway: 'Raleway', sans-serif;
 $font-open: 'Open Sans', sans-serif;
 $desktop: "(min-width: 1024px)";
-$tablet: "(min-width: 768px) and (max-width: 1023px)";
-$mobile:"(max-width: 768px)";
+$tablet: "(min-width: 800px) and (max-width: 1023px)";
+$mobile:"(min-width: 400px) and(max-width: 799px)";
+$small-mobile: "(max-width: 399px)";
 $columns: 12;
-$max-width: 1200px;
-$gutter: 8px;
+$max-width: 1352px;
+$gutter: 15px;
 

@@ -622,7 +622,7 @@ section {
 
 /*endregion sekcja otwierająca*/
 /*region sekcja statystyki*/
-.section {
+.statistics {
   width: 100%;
   height: 531px;
   background: #FFFFFF;
@@ -634,15 +634,25 @@ section {
   margin: 0;
   /*border: 2px solid red;*/
 }
+@media (min-width: 400px) and (max-width: 799px) {
+  .statistics {
+    height: 100vh;
+  }
+}
+@media (max-width: 399px) {
+  .statistics {
+    height: 100vh;
+  }
+}
 
-.section .container {
+.statistics .container {
   /*border: 2px solid blue;*/
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
 
-.section-title {
+.statistics-title {
   text-align: center;
   letter-spacing: 0;
   opacity: 1;
@@ -651,34 +661,49 @@ section {
   font-weight: 300;
   color: #000000;
   margin-bottom: 103px;
+  border: 2px solid blue;
 }
 
-.section-window {
+.statistics-window {
+  border: 2px solid violet;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 121px;
 }
+@media (min-width: 400px) and (max-width: 799px) {
+  .statistics-window {
+    display: block;
+  }
+}
+@media (max-width: 399px) {
+  .statistics-window {
+    display: block;
+  }
+}
 
-.section-box {
-  box-sizing: border-box;
-  width: 116px;
-  height: 140px;
+.statistics-box {
+  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 90px;
 }
+@media (min-width: 800px) and (max-width: 1023px) {
+  .statistics-box {
+    margin: 0 50px;
+  }
+}
 
-.section-box-top {
+.statistics-box-top {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
 }
 
-.section-box-img {
+.statistics-box-img {
   height: 54px;
   width: 42px;
   background-size: contain;
@@ -688,39 +713,39 @@ section {
   transform: translate(90%);
 }
 
-.section-img1 {
+.statistics-img1 {
   background-image: url("../assets/Person.svg");
 }
 
-.section-img2 {
+.statistics-img2 {
   background-image: url("../assets/Eye.svg");
   width: 65px;
 }
 
-.section-img3 {
+.statistics-img3 {
   background-image: url("../assets/Catalog.svg");
 }
 
-.section-box-circle {
+.statistics-box-circle {
   width: 62px;
   height: 62px;
   border-radius: 50%;
   transform: translate(-50%);
 }
 
-.section-circle1 {
+.statistics-circle1 {
   background: #FB3B64;
 }
 
-.section-circle2 {
+.statistics-circle2 {
   background: #08A6E4;
 }
 
-.section-circle3 {
+.statistics-circle3 {
   background: #55DFB4;
 }
 
-.section-box-text {
+.statistics-box-text {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 20px;
@@ -731,7 +756,7 @@ section {
   margin: 0 auto;
 }
 
-.section-box-description {
+.statistics-box-description {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 17px;

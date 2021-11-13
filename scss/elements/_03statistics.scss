@@ -34,17 +34,18 @@
   font-weight: 300;
   color: $color-black;
   margin-bottom: 103px;
-  border: 2px solid blue;
+  //border: 2px solid blue;
 }
 
 .statistics-window {
-  border: 2px solid violet;
+  //border: 2px solid violet;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 121px;
   @include mobile{
     display: block;
+
   }
   @include small-mobile{
     display: block;
@@ -54,7 +55,7 @@
 
 .statistics-box {
   //box-sizing: border-box;
-  border: 2px solid green;
+  //border: 2px solid green;
   //width: 116px;
   //height: 140px;
   display: flex;
@@ -65,6 +66,12 @@
   @include tablet{
   margin: 0 50px;
 }
+  @include mobile{
+    margin: 30px;
+  }
+  @include small-mobile{
+    margin: 10px;
+  }
 
 }
 

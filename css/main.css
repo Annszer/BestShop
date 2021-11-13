@@ -661,11 +661,9 @@ section {
   font-weight: 300;
   color: #000000;
   margin-bottom: 103px;
-  border: 2px solid blue;
 }
 
 .statistics-window {
-  border: 2px solid violet;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -683,7 +681,6 @@ section {
 }
 
 .statistics-box {
-  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -693,6 +690,16 @@ section {
 @media (min-width: 800px) and (max-width: 1023px) {
   .statistics-box {
     margin: 0 50px;
+  }
+}
+@media (min-width: 400px) and (max-width: 799px) {
+  .statistics-box {
+    margin: 30px;
+  }
+}
+@media (max-width: 399px) {
+  .statistics-box {
+    margin: 10px;
   }
 }
 
